@@ -1,14 +1,17 @@
-{% load static %}
 
 {% block content %}
 
 <!DOCTYPE html>
 <html>
     <div class="container">
+
         <header>
+            {% load static %}
+            <link rel="stylesheet" href="{ % static 'styles.css'%}">
             <nav>
                 <a href="#">Home</a>
                 <a href="#">Projects</a>
+                <a href="#">Blog</a>
 
             </nav>
             <h1>About Me</h1>

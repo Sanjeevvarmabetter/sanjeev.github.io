@@ -14,6 +14,9 @@ from django.views.generic import TemplateView
 class members(TemplateView):
     template_name = 'portfolio.html'
 
+# def ok(request):
+#     return render(request,'portfolio.html') 
+
 class PostList(generic.ListView):
     queryset = Post.objects.filter(status=1).order_by('-created_on')
     template_name = 'index.html'
