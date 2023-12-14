@@ -1,11 +1,36 @@
-{% extends "base.html" %}
+{% load static %}
 
 {% block content %}
 
-<div class="container">
-    <h1>Welcome to my portfolio</h1>
-    <p>hello from SANJEEV</p>
+<!DOCTYPE html>
+<html>
+    <div class="container">
+        <header>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Projects</a>
 
-</div>
+            </nav>
+            <h1>About Me</h1>
+        </header>
+        <div id="particles-js"></div>
+        <!-- Profile picture -->
+
+        <div class="profile-picture-container">
+            <img src="{% static 'pic/profilepic.jpeg'}" alt="Sanjeev Varma" class="profile-picture">
+        </div>
+    
+        <div class="card">
+            <div class="text-container">
+                <h2>Hi, I'm Sanjeev Varma</h2>
+                <h3>An Enthusiastic Blockchain Developer from India 🇮🇳</h3>
+                <h4>🌐✨Exploring the Blockchain Universe </h4>
+                <h4>📈 Financial Markets Enthusiast </h4>
+                <h4>🌐 Love Decentralization </h4>
+                <h4>🔐 CyberSecurity Evangelist </h4>
+            </div>
+        </div>
+    </div>
+</html>
 
 {% endblock %}
