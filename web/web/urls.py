@@ -18,8 +18,10 @@ from django.contrib import admin
 from django.urls import path,include
 from django.conf.urls.static import static
 from django.conf import settings
+from blog.views import portfolioview
 
 urlpatterns = [
+    path('', portfolioview.as_view(), name='portfolio'),
     path('admin/', admin.site.urls),
     path('',include('blog.urls')),
     path('ckeditor/',include('ckeditor_uploader.urls')),
